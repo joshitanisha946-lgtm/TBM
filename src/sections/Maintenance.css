@@ -1,0 +1,686 @@
+/* =========================================
+   MAINTENANCE SECTION
+========================================= */
+
+.maintenance-section {
+  position: relative;
+
+  padding: 170px 0 150px;
+
+  background: #11110f;
+
+  color: #f4f1ea;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.maintenance-container {
+  width: min(1250px, 88%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.maintenance-header {
+  display: grid;
+
+  grid-template-columns: 1fr 1.7fr;
+
+  column-gap: 80px;
+
+  padding-bottom: 110px;
+}
+
+.maintenance-label {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 75px;
+
+  font-size: 9px;
+
+  letter-spacing: 2.5px;
+
+  color: #777269;
+}
+
+.maintenance-label span:last-child {
+  color: #f4f1ea;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.maintenance-header h2 {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(70px, 9vw, 130px);
+
+  font-weight: 500;
+
+  line-height: 0.84;
+
+  letter-spacing: -6px;
+}
+
+.maintenance-header h2 em {
+  color: #ffbd00;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.maintenance-intro {
+  grid-column: 2;
+
+  max-width: 500px;
+
+  margin: 50px 0 0;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #99938a;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.maintenance-services {
+  border-top: 1px solid #383630;
+}
+
+.maintenance-service {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 100px 1fr 70px;
+
+  align-items: center;
+
+  gap: 50px;
+
+  min-height: 155px;
+
+  padding: 35px 25px 35px 0;
+
+  border-bottom: 1px solid #383630;
+
+  transition:
+    background 0.4s ease,
+    padding-left 0.4s ease;
+}
+
+.maintenance-service:hover {
+  background: #1a1916;
+
+  padding-left: 25px;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.maintenance-service-number {
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #777269;
+}
+
+.maintenance-service:hover .maintenance-service-number {
+  color: #ffbd00;
+}
+
+
+/* =========================================
+   SERVICE CONTENT
+========================================= */
+
+.maintenance-service-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.maintenance-service-content h3 {
+  min-width: 170px;
+
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 42px;
+
+  font-weight: 400;
+
+  letter-spacing: -1px;
+}
+
+.maintenance-service-content p {
+  max-width: 500px;
+
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+
+  color: #8d877c;
+}
+
+
+/* =========================================
+   SERVICE ARROW
+========================================= */
+
+.maintenance-service-arrow {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #4a4740;
+
+  border-radius: 50%;
+
+  color: #f4f1ea;
+
+  font-size: 18px;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.maintenance-service:hover .maintenance-service-arrow {
+  background: #ffbd00;
+
+  border-color: #ffbd00;
+
+  color: #111111;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================
+   PRICING
+========================================= */
+
+.maintenance-pricing {
+  margin-top: 150px;
+
+  padding-top: 100px;
+
+  border-top: 1px solid #383630;
+}
+
+.maintenance-pricing-header {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  margin-bottom: 60px;
+}
+
+.maintenance-pricing-header > div > span {
+  font-size: 9px;
+
+  letter-spacing: 2.5px;
+
+  color: #777269;
+}
+
+.maintenance-pricing-header h3 {
+  margin: 25px 0 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(50px, 6vw, 80px);
+
+  font-weight: 500;
+
+  line-height: 0.86;
+
+  letter-spacing: -4px;
+}
+
+.maintenance-pricing-header h3 em {
+  color: #ffbd00;
+
+  font-weight: 400;
+}
+
+.maintenance-pricing-header p {
+  max-width: 380px;
+
+  margin: auto 0;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  color: #99938a;
+}
+
+
+/* =========================================
+   PLAN CARDS
+========================================= */
+
+.maintenance-plans {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+.maintenance-plan {
+  padding: 30px;
+
+  background: #1a1916;
+
+  border: 1px solid #34322d;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease,
+    transform 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.maintenance-plan:hover {
+  background: #ffbd00;
+
+  color: #111111;
+
+  border-color: #ffbd00;
+
+  transform: translateY(-8px);
+}
+
+
+/* =========================================
+   PLAN TOP
+========================================= */
+
+.maintenance-plan-top {
+  display: grid;
+
+  grid-template-columns: 35px 1fr auto;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #34322d;
+}
+
+.maintenance-plan:hover .maintenance-plan-top {
+  border-color: rgba(17, 17, 17, 0.2);
+}
+
+.maintenance-plan-top > span {
+  font-size: 8px;
+
+  letter-spacing: 2px;
+
+  color: #777269;
+}
+
+.maintenance-plan:hover .maintenance-plan-top > span {
+  color: #111111;
+}
+
+.maintenance-plan-top h4 {
+  margin: 0;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+}
+
+.maintenance-plan-top strong {
+  font-size: 20px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   PLAN PRICES
+========================================= */
+
+.maintenance-plan-prices {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.maintenance-plan-prices > div {
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #34322d;
+}
+
+.maintenance-plan:hover .maintenance-plan-prices > div {
+  border-color: rgba(17, 17, 17, 0.2);
+}
+
+.maintenance-plan-prices > div:last-child {
+  border-bottom: none;
+}
+
+.maintenance-plan-prices span {
+  font-size: 7px;
+
+  letter-spacing: 1.5px;
+
+  color: #777269;
+}
+
+.maintenance-plan:hover .maintenance-plan-prices span {
+  color: #111111;
+}
+
+.maintenance-plan-prices strong {
+  font-family: "Playfair Display", serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+}
+
+.maintenance-plan-prices small {
+  grid-column: 1 / -1;
+
+  margin-top: -12px;
+
+  font-size: 7px;
+
+  color: #777269;
+}
+
+.maintenance-plan:hover .maintenance-plan-prices small {
+  color: #111111;
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.maintenance-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 100px;
+
+  padding-top: 35px;
+
+  border-top: 1px solid #383630;
+}
+
+.maintenance-bottom > span {
+  font-size: 9px;
+
+  line-height: 1.7;
+
+  letter-spacing: 2px;
+
+  color: #777269;
+}
+
+.maintenance-bottom a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 7px 7px 7px 20px;
+
+  border: 1px solid #4a4740;
+
+  border-radius: 100px;
+
+  color: #f4f1ea;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.maintenance-bottom a strong {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f4f1ea;
+
+  color: #111111;
+
+  font-size: 16px;
+}
+
+.maintenance-bottom a:hover {
+  background: #ffbd00;
+
+  border-color: #ffbd00;
+
+  color: #111111;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .maintenance-section {
+    padding: 120px 0;
+  }
+
+  .maintenance-header {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 90px;
+  }
+
+  .maintenance-label {
+    flex-direction: row;
+
+    height: auto;
+  }
+
+  .maintenance-intro {
+    grid-column: auto;
+
+    margin-top: 0;
+  }
+
+  .maintenance-header h2 {
+    font-size: 80px;
+
+    letter-spacing: -4px;
+  }
+
+  .maintenance-service-content {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .maintenance-plans {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .maintenance-section {
+    padding: 100px 0;
+  }
+
+  .maintenance-container {
+    width: 88%;
+  }
+
+  .maintenance-header {
+    padding-bottom: 70px;
+  }
+
+  .maintenance-header h2 {
+    font-size: 58px;
+
+    letter-spacing: -3px;
+  }
+
+  .maintenance-intro {
+    font-size: 13px;
+  }
+
+  .maintenance-service {
+    grid-template-columns: 45px 1fr;
+
+    gap: 20px;
+
+    min-height: auto;
+
+    padding: 35px 0;
+  }
+
+  .maintenance-service:hover {
+    padding-left: 10px;
+  }
+
+  .maintenance-service-content {
+    display: block;
+  }
+
+  .maintenance-service-content h3 {
+    min-width: 0;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+  }
+
+  .maintenance-service-content p {
+    font-size: 11px;
+  }
+
+  .maintenance-service-arrow {
+    display: none;
+  }
+
+  .maintenance-pricing {
+    margin-top: 100px;
+
+    padding-top: 70px;
+  }
+
+  .maintenance-pricing-header {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .maintenance-pricing-header h3 {
+    font-size: 55px;
+  }
+
+  .maintenance-pricing-header p {
+    font-size: 12px;
+  }
+
+  .maintenance-plan {
+    padding: 25px;
+  }
+
+  .maintenance-bottom {
+    display: block;
+
+    margin-top: 70px;
+  }
+
+  .maintenance-bottom a {
+    width: fit-content;
+
+    margin-top: 25px;
+  }
+}

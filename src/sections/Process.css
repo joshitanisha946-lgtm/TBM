@@ -1,0 +1,681 @@
+/* =========================================
+   PROCESS SECTION
+========================================= */
+
+.process-section {
+  position: relative;
+
+  padding: 170px 0 150px;
+
+  background: #f4f1ea;
+
+  color: #191816;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.process-container {
+  width: min(1250px, 88%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.process-header {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.7fr;
+
+  column-gap: 80px;
+
+  padding-bottom: 120px;
+}
+
+.process-label {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 80px;
+
+  font-size: 9px;
+
+  letter-spacing: 2.5px;
+
+  color: #8d877c;
+}
+
+.process-label span:last-child {
+  color: #191816;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.process-header h2 {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(70px, 9vw, 130px);
+
+  font-weight: 500;
+
+  line-height: 0.84;
+
+  letter-spacing: -6px;
+}
+
+.process-header h2 em {
+  color: #ffbd00;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.process-intro {
+  grid-column: 2;
+
+  max-width: 500px;
+
+  margin: 50px 0 0;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #777168;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.process-timeline {
+  position: relative;
+
+  padding-left: 100px;
+
+  border-top: 1px solid #d2ccc1;
+}
+
+
+/* Vertical line */
+
+.process-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 32px;
+
+  width: 1px;
+
+  background: #d2ccc1;
+}
+
+.process-line-active {
+  width: 2px;
+
+  background: #ffbd00;
+}
+
+
+/* =========================================
+   PROCESS STEP
+========================================= */
+
+.process-step {
+  position: relative;
+
+  min-height: 190px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 100px;
+
+  align-items: center;
+
+  gap: 50px;
+
+  padding: 45px 0;
+
+  border-bottom: 1px solid #d2ccc1;
+
+  transition:
+    background 0.4s ease,
+    padding-left 0.4s ease;
+}
+
+
+/* =========================================
+   NUMBER CIRCLE
+========================================= */
+
+.process-number {
+  position: absolute;
+
+  left: -100px;
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #bdb6aa;
+
+  border-radius: 50%;
+
+  background: #f4f1ea;
+
+  z-index: 2;
+
+  transition:
+    background 0.4s ease,
+    border-color 0.4s ease,
+    transform 0.4s ease;
+}
+
+.process-number span {
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  color: #777168;
+}
+
+.process-step:hover .process-number {
+  background: #ffbd00;
+
+  border-color: #ffbd00;
+
+  transform: scale(1.1);
+}
+
+.process-step:hover .process-number span {
+  color: #111111;
+}
+
+
+/* =========================================
+   STEP CONTENT
+========================================= */
+
+.process-content {
+  max-width: 760px;
+}
+
+.process-title-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+.process-title-row h3 {
+  margin: 0;
+
+  font-size: 22px;
+
+  font-weight: 500;
+
+  letter-spacing: -0.5px;
+}
+
+.process-arrow {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #c6bfb4;
+
+  border-radius: 50%;
+
+  color: #191816;
+
+  font-size: 16px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.process-step:hover .process-arrow {
+  background: #ffbd00;
+
+  border-color: #ffbd00;
+
+  color: #111111;
+
+  transform: rotate(45deg);
+}
+
+.process-content p {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #777168;
+}
+
+
+/* =========================================
+   SIDE STEP
+========================================= */
+
+.process-side {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 7px;
+}
+
+.process-side span {
+  font-size: 7px;
+
+  letter-spacing: 2px;
+
+  color: #a19a8e;
+}
+
+.process-side strong {
+  font-family: "Playfair Display", serif;
+
+  font-size: 34px;
+
+  font-weight: 400;
+
+  color: #b0a99e;
+
+  transition: color 0.3s ease;
+}
+
+.process-step:hover .process-side strong {
+  color: #ffbd00;
+}
+
+
+/* =========================================
+   BOTTOM STATEMENT
+========================================= */
+
+.process-bottom {
+  display: grid;
+
+  grid-template-columns: 1fr 1.7fr;
+
+  gap: 80px;
+
+  padding-top: 130px;
+}
+
+.process-bottom > span {
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #8d877c;
+}
+
+.process-bottom p {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(48px, 6vw, 82px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+}
+
+.process-bottom strong {
+  font-weight: 500;
+}
+
+.process-bottom em {
+  color: #ffbd00;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .process-section {
+    padding: 120px 0;
+  }
+
+  .process-header {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 90px;
+  }
+
+  .process-label {
+    flex-direction: row;
+
+    height: auto;
+  }
+
+  .process-intro {
+    grid-column: auto;
+
+    margin-top: 0;
+  }
+
+  .process-header h2 {
+    font-size: 80px;
+
+    letter-spacing: -4px;
+  }
+
+  .process-bottom {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .process-section {
+    padding: 100px 0;
+  }
+
+  .process-container {
+    width: 88%;
+  }
+
+  .process-header {
+    padding-bottom: 70px;
+  }
+
+  .process-header h2 {
+    font-size: 58px;
+
+    letter-spacing: -3px;
+  }
+
+  .process-intro {
+    font-size: 13px;
+  }
+
+  .process-timeline {
+    padding-left: 65px;
+  }
+
+  .process-line {
+    left: 20px;
+  }
+
+  .process-step {
+    min-height: auto;
+
+    display: block;
+
+    padding: 45px 0;
+  }
+
+  .process-number {
+    left: -65px;
+
+    width: 42px;
+    height: 42px;
+  }
+
+  .process-number span {
+    font-size: 8px;
+  }
+
+  .process-title-row {
+    margin-bottom: 14px;
+  }
+
+  .process-title-row h3 {
+    font-size: 18px;
+  }
+
+  .process-arrow {
+    width: 34px;
+    height: 34px;
+
+    font-size: 13px;
+  }
+
+  .process-content p {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+  .process-side {
+    display: none;
+  }
+
+  .process-bottom {
+    display: block;
+
+    padding-top: 80px;
+  }
+
+  .process-bottom p {
+    margin-top: 35px;
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+}
+/* =========================================
+   PROCESS — BOTTOM STATEMENT TYPOGRAPHY FIX
+========================================= */
+
+.process-bottom p,
+.process-bottom p strong,
+.process-bottom p em {
+  font-family: "Source Sans 3", sans-serif !important;
+
+  font-style: normal !important;
+
+  font-weight: 600 !important;
+
+  color: #191816 !important;
+}
+
+
+/* Main statement */
+
+.process-bottom p {
+  font-size: clamp(55px, 7vw, 105px) !important;
+
+  line-height: 0.86 !important;
+
+  letter-spacing: -3px !important;
+}
+
+
+/* ONE TEAM / ONE PLAN / ONE FINISHED */
+
+.process-bottom p strong {
+  font-family: "Source Sans 3", sans-serif !important;
+
+  font-style: normal !important;
+
+  font-weight: 600 !important;
+}
+
+
+/* BATHROOM */
+
+.process-bottom p em {
+  font-family: "Source Sans 3", sans-serif !important;
+
+  font-style: normal !important;
+
+  font-weight: 500 !important;
+
+  color: #ffbd00 !important;
+}
+
+
+/* Small label above */
+
+.process-bottom > span {
+  font-family: "Poppins", sans-serif !important;
+
+  font-size: 10px !important;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px !important;
+
+  color: #777168 !important;
+}
+
+
+/* =========================================
+   NIGHT MODE
+========================================= */
+
+.app.night-mode .process-bottom p,
+.app.night-mode .process-bottom p strong {
+  color: #eef1ff !important;
+}
+
+.app.night-mode .process-bottom p em {
+  color: #ffbd00 !important;
+}
+
+.app.night-mode .process-bottom > span {
+  color: #8993b7 !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .process-bottom p {
+    font-size: 52px !important;
+
+    line-height: 0.9 !important;
+
+    letter-spacing: -2px !important;
+  }
+
+  .process-bottom > span {
+    font-size: 9px !important;
+  }
+}
+/* =========================================
+   PROCESS — REMOVE EMPTY SPACE
+========================================= */
+
+.process-section {
+  min-height: 0 !important;
+  height: auto !important;
+
+  padding-top: 140px !important;
+  padding-bottom: 90px !important;
+
+  overflow: hidden;
+}
+
+
+.process-container {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+
+/* Keep the bottom statement close to the timeline */
+
+.process-bottom {
+  margin-top: 80px !important;
+  margin-bottom: 0 !important;
+
+  padding-top: 35px !important;
+  padding-bottom: 0 !important;
+}
+
+
+/* Prevent any hidden element from creating height */
+
+.process-bottom p {
+  margin-bottom: 0 !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .process-section {
+    padding-top: 90px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .process-bottom {
+    margin-top: 60px !important;
+    padding-top: 25px !important;
+  }
+}

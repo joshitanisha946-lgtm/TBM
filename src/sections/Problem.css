@@ -1,0 +1,272 @@
+.problem-section {
+  position: relative;
+  width: 100%;
+  padding: 150px 6vw 140px;
+  background: #f4f1ea;
+  color: #191816;
+  overflow: hidden;
+}
+
+.problem-container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.problem-eyebrow {
+  margin-bottom: 55px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #777168;
+}
+
+.problem-section h2 {
+  margin: 0;
+  max-width: 850px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: clamp(55px, 7vw, 105px);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -3px;
+}
+
+.problem-section h2 em {
+  font-style: italic;
+  font-weight: 500;
+  color: #ffbd00;
+}
+
+/* -----------------------------
+   FLOATING PROBLEM BUBBLES
+----------------------------- */
+
+.problem-chaos {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  margin-top: 85px;
+}
+
+.problem-chaos span {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 24px;
+
+  border: 1px solid rgba(25, 24, 22, 0.16);
+  border-radius: 100px;
+
+  background: rgba(255, 255, 255, 0.48);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  white-space: nowrap;
+
+  box-shadow:
+    0 10px 30px rgba(25, 24, 22, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.problem-chaos span:hover {
+  background: #ffbd00;
+  border-color: #ffbd00;
+  transform: translateY(-7px) scale(1.04);
+  box-shadow:
+    0 15px 35px rgba(255, 189, 0, 0.2);
+}
+
+/* Individual bubble positions */
+
+.problem-chaos span:nth-child(1) {
+  top: 10px;
+  left: 4%;
+  transform: rotate(-4deg);
+}
+
+.problem-chaos span:nth-child(2) {
+  top: 85px;
+  left: 25%;
+  transform: rotate(3deg);
+}
+
+.problem-chaos span:nth-child(3) {
+  top: 5px;
+  left: 48%;
+  transform: rotate(-2deg);
+}
+
+.problem-chaos span:nth-child(4) {
+  top: 105px;
+  left: 65%;
+  transform: rotate(4deg);
+}
+
+.problem-chaos span:nth-child(5) {
+  top: 205px;
+  left: 12%;
+  transform: rotate(2deg);
+}
+
+.problem-chaos span:nth-child(6) {
+  top: 190px;
+  left: 42%;
+  transform: rotate(-4deg);
+}
+
+.problem-chaos span:nth-child(7) {
+  top: 225px;
+  right: 4%;
+  transform: rotate(3deg);
+}
+
+/* -----------------------------
+   BETTER WAY
+----------------------------- */
+
+.problem-solution {
+  position: relative;
+  margin-top: 90px;
+  padding-top: 70px;
+  border-top: 1px solid rgba(25, 24, 22, 0.12);
+}
+
+.problem-solution > span {
+  display: block;
+  margin-bottom: 35px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #777168;
+}
+
+.problem-solution h3 {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: clamp(48px, 6.5vw, 100px);
+  font-weight: 600;
+  line-height: 0.88;
+  letter-spacing: -3px;
+}
+
+.problem-solution h3 em {
+  font-style: italic;
+  font-weight: 500;
+  color: #ffbd00;
+}
+
+.problem-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 55px;
+}
+
+.problem-points p {
+  margin: 0;
+  padding: 12px 20px;
+
+  border: 1px solid rgba(25, 24, 22, 0.14);
+  border-radius: 100px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* -----------------------------
+   MOBILE
+----------------------------- */
+
+@media (max-width: 800px) {
+  .problem-section {
+    padding: 100px 6vw 90px;
+  }
+
+  .problem-eyebrow {
+    margin-bottom: 40px;
+  }
+
+  .problem-section h2 {
+    font-size: clamp(48px, 13vw, 75px);
+    letter-spacing: -2px;
+  }
+
+  .problem-chaos {
+    min-height: 430px;
+    margin-top: 65px;
+  }
+
+  .problem-chaos span {
+    font-size: 10px;
+    padding: 11px 17px;
+  }
+
+  .problem-chaos span:nth-child(1) {
+    top: 10px;
+    left: 0;
+  }
+
+  .problem-chaos span:nth-child(2) {
+    top: 75px;
+    left: 38%;
+  }
+
+  .problem-chaos span:nth-child(3) {
+    top: 140px;
+    left: 8%;
+  }
+
+  .problem-chaos span:nth-child(4) {
+    top: 205px;
+    left: 45%;
+  }
+
+  .problem-chaos span:nth-child(5) {
+    top: 270px;
+    left: 0;
+  }
+
+  .problem-chaos span:nth-child(6) {
+    top: 330px;
+    left: 35%;
+  }
+
+  .problem-chaos span:nth-child(7) {
+    top: 390px;
+    right: 0;
+  }
+
+  .problem-solution {
+    margin-top: 50px;
+    padding-top: 45px;
+  }
+
+  .problem-solution h3 {
+    font-size: clamp(45px, 12vw, 70px);
+    letter-spacing: -2px;
+  }
+
+  .problem-points {
+    margin-top: 40px;
+    gap: 8px;
+  }
+
+  .problem-points p {
+    font-size: 9px;
+    padding: 10px 14px;
+  }
+}

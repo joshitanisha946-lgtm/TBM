@@ -1,0 +1,922 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+
+/* =========================================
+   GLOBAL DESIGN SYSTEM
+========================================= */
+
+:root {
+  --font-body: "Poppins", sans-serif;
+  --font-display: "Source Sans 3", sans-serif;
+
+  --yellow: #ffbd00;
+
+  --black: #191816;
+  --cream: #f4f1ea;
+
+  --text-main: #191816;
+  --text-body: #5f5a52;
+  --text-secondary: #777168;
+  --text-muted: #8d877c;
+
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background: var(--cream);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background: var(--cream);
+  color: var(--text-main);
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.7;
+
+  -webkit-font-smoothing: antialiased;
+
+  transition:
+    background 0.6s ease,
+    color 0.6s ease;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================================
+   HEADING SYSTEM
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display) !important;
+  font-style: normal !important;
+}
+
+/* =========================================
+   BODY TEXT
+========================================= */
+
+p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================================
+   GLOBAL READABILITY
+========================================= */
+
+[class*="label"],
+[class*="eyebrow"] {
+  font-family: var(--font-body) !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 1.8px !important;
+}
+
+[class*="number"],
+[class*="meta"] {
+  font-family: var(--font-body) !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 1.3px !important;
+}
+
+[class*="description"],
+[class*="intro"] {
+  font-family: var(--font-body) !important;
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-eyebrow {
+  font-size: 11px !important;
+  letter-spacing: 2.5px !important;
+  color: #777168 !important;
+}
+
+.hero-description {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+  color: #5f5a52 !important;
+}
+
+.hero-guarantee span {
+  font-size: 11px !important;
+  letter-spacing: 1.8px !important;
+  color: #191816 !important;
+}
+
+.hero-guarantee p {
+  font-size: 10px !important;
+  letter-spacing: 1.2px !important;
+  color: #777168 !important;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar-links a {
+  font-size: 12px !important;
+}
+
+.navbar-button {
+  font-size: 11px !important;
+}
+
+/* =========================================
+   PACKAGES
+========================================= */
+
+.packages-eyebrow {
+  font-size: 11px !important;
+  letter-spacing: 2.5px !important;
+  color: #777168 !important;
+}
+
+.packages-intro {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+  color: #777168 !important;
+}
+
+.package-number {
+  font-size: 11px !important;
+  color: #aaa398 !important;
+}
+
+.package-price {
+  font-size: 11px !important;
+  color: #aaa398 !important;
+}
+
+.package-price strong {
+  font-size: 27px !important;
+  color: #f4f1ea !important;
+}
+
+.package-hidden p {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  color: #c5bfb5 !important;
+}
+
+.package-features span {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  color: #d0cbc2 !important;
+}
+
+.packages-note p {
+  font-size: 10px !important;
+  line-height: 1.7 !important;
+  color: #99938a !important;
+}
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.process-label {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+.process-intro {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.process-content p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.process-side span {
+  font-size: 10px !important;
+  letter-spacing: 1.5px !important;
+}
+
+.process-side strong {
+  font-size: 12px !important;
+}
+
+.process-bottom > span {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+/* =========================================
+   PORTFOLIO
+========================================= */
+
+.portfolio-label {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+.portfolio-heading-content p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.portfolio-number {
+  font-size: 10px !important;
+}
+
+.portfolio-bottom > span {
+  font-size: 11px !important;
+  letter-spacing: 1.8px !important;
+}
+
+.portfolio-bottom a {
+  font-size: 10px !important;
+}
+
+/* =========================================
+   WHY US
+========================================= */
+
+.why-us-label {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+.why-us-heading p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.why-us-number {
+  font-size: 11px !important;
+}
+
+.why-us-card-content p {
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+}
+
+.why-us-bottom > span {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.testimonials-eyebrow {
+  font-size: 11px !important;
+  letter-spacing: 2.5px !important;
+}
+
+.testimonial-meta {
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+}
+
+.testimonial-client {
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+}
+
+.testimonials-bottom > span {
+  font-size: 11px !important;
+  letter-spacing: 1.8px !important;
+}
+
+/* =========================================
+   MAINTENANCE
+========================================= */
+
+.maintenance-label {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-intro {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-service-number {
+  font-size: 11px !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-service-content p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-pricing-header > div > span {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-pricing-header p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-plan-top > span {
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-plan-top h4 {
+  font-family: var(--font-body) !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+
+.maintenance-plan-prices span {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.5px !important;
+  color: #aaa49a !important;
+}
+
+.maintenance-plan-prices small {
+  font-family: var(--font-body) !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #8f897f !important;
+}
+
+.maintenance-plan-prices strong {
+  font-family: var(--font-display) !important;
+  font-size: 28px !important;
+  font-weight: 500 !important;
+}
+
+.maintenance-bottom > span {
+  font-size: 11px !important;
+  letter-spacing: 1.8px !important;
+}
+
+.maintenance-bottom a {
+  font-size: 10px !important;
+}
+
+/* =========================================
+   GLOBAL TRENDS
+========================================= */
+
+.global-trends-label {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+.global-trends-heading p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.global-trend-meta {
+  font-size: 10px !important;
+  letter-spacing: 1.5px !important;
+}
+
+.global-trend-info p {
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+}
+
+.global-trends-bottom > div > span {
+  font-size: 10px !important;
+  letter-spacing: 1.8px !important;
+}
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq-label {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+.faq-heading p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.faq-number {
+  font-size: 10px !important;
+  letter-spacing: 1.5px !important;
+}
+
+.faq-answer p {
+  font-size: 14px !important;
+  line-height: 1.85 !important;
+}
+
+.faq-bottom > div > span {
+  font-size: 10px !important;
+  letter-spacing: 1.8px !important;
+}
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-label {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+}
+
+.contact-heading p {
+  font-size: 14px !important;
+  line-height: 1.8 !important;
+}
+
+.contact-detail-block > span {
+  font-size: 10px !important;
+  letter-spacing: 1.8px !important;
+}
+
+.contact-detail-block p {
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+}
+
+.contact-form label > span {
+  font-size: 10px !important;
+  letter-spacing: 1.6px !important;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-size: 14px !important;
+}
+
+.contact-submit {
+  font-size: 11px !important;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer-brand p {
+  font-size: 12px !important;
+  line-height: 1.8 !important;
+}
+
+.footer-links span {
+  font-size: 10px !important;
+  letter-spacing: 1.8px !important;
+}
+
+.footer-links a {
+  font-size: 12px !important;
+}
+
+.footer-bottom {
+  font-size: 10px !important;
+  letter-spacing: 1.2px !important;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-button {
+  font-size: 11px !important;
+}
+
+.navbar-button {
+  font-size: 11px !important;
+}
+
+.maintenance-bottom a,
+.global-trends-bottom a,
+.faq-bottom a {
+  font-size: 11px !important;
+}
+
+/* =========================================
+   NIGHT MODE — TEXT
+========================================= */
+
+.app.night-mode p {
+  color: #b4bddb;
+}
+
+.app.night-mode h1,
+.app.night-mode h2,
+.app.night-mode h3,
+.app.night-mode h4,
+.app.night-mode h5,
+.app.night-mode h6 {
+  color: #eef1ff;
+}
+
+/* =========================================
+   SECTION TRANSITIONS
+========================================= */
+
+.hero-section,
+.problem-section,
+.packages-section,
+.portfolio-section,
+.why-section,
+.why-us-section,
+.testimonials-section,
+.maintenance-section,
+.global-trends-section,
+.faq-section,
+.contact-section {
+  transition:
+    background 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  body {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  [class*="label"],
+  [class*="eyebrow"] {
+    font-size: 10px !important;
+  }
+
+  [class*="number"],
+  [class*="meta"] {
+    font-size: 10px !important;
+  }
+
+  .hero-description,
+  .packages-intro,
+  .process-intro,
+  .portfolio-heading-content p,
+  .why-us-heading p,
+  .maintenance-intro,
+  .global-trends-heading p,
+  .faq-heading p,
+  .contact-heading p {
+    font-size: 13px !important;
+  }
+
+  .process-content p,
+  .maintenance-service-content p,
+  .global-trend-info p,
+  .faq-answer p {
+    font-size: 13px !important;
+  }
+
+  .package-hidden p {
+    font-size: 13px !important;
+  }
+
+  .package-features span {
+    font-size: 11px !important;
+  }
+
+  .maintenance-plan-top h4 {
+    font-size: 14px !important;
+  }
+
+  .maintenance-plan-prices span {
+    font-size: 10px !important;
+  }
+
+  .maintenance-plan-prices small {
+    font-size: 9px !important;
+  }
+
+  .maintenance-plan-prices strong {
+    font-size: 24px !important;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 13px !important;
+  }
+}
+
+/* =========================================
+   NIGHT MODE — MAIN THEME
+========================================= */
+
+.app {
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--text-main);
+
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+.app.night-mode {
+  background: #0b1020;
+  color: #eef1ff;
+}
+
+body:has(.app.night-mode) {
+  background: #0b1020;
+}
+
+/* =========================================
+   NIGHT MODE — SECTIONS
+========================================= */
+
+.app.night-mode .hero-section,
+.app.night-mode .problem-section,
+.app.night-mode .packages-section,
+.app.night-mode .process-section,
+.app.night-mode .why-us-section,
+.app.night-mode .testimonials-section,
+.app.night-mode .maintenance-section,
+.app.night-mode .faq-section,
+.app.night-mode .contact-section {
+  background: #0b1020 !important;
+  color: #eef1ff !important;
+}
+
+/* Global Trends already has its own dark design */
+.app.night-mode .global-trends-section {
+  background: #191816 !important;
+}
+
+/* =========================================
+   NIGHT MODE — HEADINGS
+========================================= */
+
+.app.night-mode h1,
+.app.night-mode h2,
+.app.night-mode h3,
+.app.night-mode h4,
+.app.night-mode h5,
+.app.night-mode h6 {
+  color: #eef1ff !important;
+}
+
+.app.night-mode p {
+  color: #b4bddb;
+}
+
+/* =========================================
+   NIGHT MODE — LABELS
+========================================= */
+
+.app.night-mode .hero-eyebrow,
+.app.night-mode .problem-eyebrow,
+.app.night-mode .packages-eyebrow,
+.app.night-mode .process-label,
+.app.night-mode .why-us-label,
+.app.night-mode .testimonials-eyebrow {
+  color: #a8b1ca !important;
+}
+
+/* =========================================
+   NIGHT MODE — HERO
+========================================= */
+
+.app.night-mode .hero-description {
+  color: #b4bddb !important;
+}
+
+.app.night-mode .hero-guarantee span {
+  color: #eef1ff !important;
+}
+
+.app.night-mode .hero-guarantee p {
+  color: #929dbf !important;
+}
+
+.app.night-mode .hero-line {
+  background: #303952 !important;
+}
+
+/* =========================================
+   NIGHT MODE — ACCENT
+========================================= */
+
+.app.night-mode em {
+  color: #ffbd00 !important;
+}
+
+/* =========================================
+   NIGHT MODE — BUTTONS
+========================================= */
+
+.app.night-mode .hero-button,
+.app.night-mode .navbar-button {
+  background: #ffbd00 !important;
+  color: #111111 !important;
+}
+
+.app.night-mode .hero-button strong,
+.app.night-mode .navbar-button strong {
+  background: #111111 !important;
+  color: #ffffff !important;
+}
+
+/* =========================================
+   NIGHT MODE — PACKAGES
+========================================= */
+
+.app.night-mode .package-card {
+  background: #11182b !important;
+  border-color: #303952 !important;
+}
+
+.app.night-mode .package-card h3 {
+  color: #eef1ff !important;
+}
+
+.app.night-mode .package-number,
+.app.night-mode .package-price span,
+.app.night-mode .packages-note p {
+  color: #929dbf !important;
+}
+
+.app.night-mode .package-price strong {
+  color: #eef1ff !important;
+}
+
+/* =========================================
+   NIGHT MODE — PROCESS
+========================================= */
+
+.app.night-mode .process-bottom p,
+.app.night-mode .process-bottom p strong {
+  color: #eef1ff !important;
+}
+
+.app.night-mode .process-bottom p em {
+  color: #ffbd00 !important;
+}
+
+/* =========================================
+   NIGHT MODE — WHY US
+========================================= */
+
+.app.night-mode .why-us-card {
+  background: #11182b !important;
+  border-color: #303952 !important;
+}
+
+.app.night-mode .why-us-card-content p {
+  color: #b4bddb !important;
+}
+
+/* =========================================
+   NIGHT MODE — TESTIMONIALS
+========================================= */
+
+.app.night-mode .testimonial-card {
+  background: #11182b !important;
+  border-color: #303952 !important;
+}
+
+.app.night-mode .testimonial-meta,
+.app.night-mode .testimonial-client {
+  color: #929dbf !important;
+}
+
+/* =========================================
+   NIGHT MODE — MAINTENANCE
+========================================= */
+
+.app.night-mode .maintenance-label,
+.app.night-mode .maintenance-intro,
+.app.night-mode .maintenance-service-number,
+.app.night-mode .maintenance-service-content p,
+.app.night-mode .maintenance-pricing-header > div > span,
+.app.night-mode .maintenance-pricing-header p,
+.app.night-mode .maintenance-plan-top > span,
+.app.night-mode .maintenance-plan-prices span {
+  color: #b5bfdf !important;
+}
+
+.app.night-mode .maintenance-plan-prices small {
+  color: #929dbf !important;
+}
+
+.app.night-mode .maintenance-plan-prices strong {
+  color: #eef1ff !important;
+}
+
+.app.night-mode .maintenance-plan,
+.app.night-mode .maintenance-service {
+  background: #11182b;
+  border-color: #303952;
+}
+
+/* =========================================
+   NIGHT MODE — CONTACT
+========================================= */
+
+.app.night-mode .contact-form input,
+.app.night-mode .contact-form select,
+.app.night-mode .contact-form textarea {
+  background: #11182b !important;
+  color: #eef1ff !important;
+  border-color: #303952 !important;
+}
+
+.app.night-mode .contact-form input::placeholder,
+.app.night-mode .contact-form textarea::placeholder {
+  color: #7f89a8 !important;
+}
+
+/* =========================================
+   NIGHT MODE — GLOBAL TRENDS LINES
+========================================= */
+
+.app.night-mode .global-trend-line {
+  background: #303952 !important;
+}
+
+/* =========================================
+   NIGHT MODE — TRANSITION
+========================================= */
+
+.app,
+.app .hero-section,
+.app .problem-section,
+.app .packages-section,
+.app .process-section,
+.app .why-us-section,
+.app .testimonials-section,
+.app .maintenance-section,
+.app .global-trends-section,
+.app .faq-section,
+.app .contact-section {
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease;
+}

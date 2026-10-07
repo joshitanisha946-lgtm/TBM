@@ -1,0 +1,691 @@
+/* =========================================
+   PACKAGES SECTION
+========================================= */
+
+.packages-section {
+  position: relative;
+
+  padding: 170px 0 150px;
+
+  background: #1c1b19;
+
+  color: #f4f1ea;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.packages-container {
+  width: min(1250px, 88%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.packages-heading {
+  display: grid;
+
+  grid-template-columns: 1fr 1.7fr;
+
+  column-gap: 80px;
+
+  padding-bottom: 110px;
+}
+
+
+.packages-eyebrow {
+  margin: 0;
+
+  align-self: start;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 2.5px;
+
+  color: #b5aea3;
+}
+
+
+.packages-heading h2 {
+  margin: 0;
+
+  font-family: "Source Sans 3", sans-serif !important;
+
+  font-size: clamp(65px, 8.5vw, 120px);
+
+  font-weight: 600;
+
+  line-height: 0.84;
+
+  letter-spacing: -4px;
+
+  color: #f4f1ea;
+}
+
+
+.packages-heading h2 em {
+  font-family: "Source Sans 3", sans-serif !important;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  color: #aaa297;
+}
+
+
+.packages-intro {
+  grid-column: 2;
+
+  max-width: 560px;
+
+  margin: 50px 0 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  color: #bcb6ad;
+}
+
+
+/* =========================================
+   PACKAGE LIST
+========================================= */
+
+.packages-list {
+  border-top: 1px solid #44413b;
+}
+
+
+/* =========================================
+   PACKAGE CARD
+========================================= */
+
+.package-card {
+  position: relative;
+
+  min-height: 330px;
+
+  padding: 35px 25px 45px 0;
+
+  border-bottom: 1px solid #44413b;
+
+  overflow: hidden;
+
+  transition:
+    background 0.45s ease,
+    padding-left 0.45s ease;
+}
+
+
+.package-card:hover {
+  background: #24231f;
+
+  padding-left: 25px;
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.package-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+
+.package-number {
+  font-family: "Poppins", sans-serif !important;
+
+  font-size: 11px !important;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  color: #aaa398 !important;
+}
+
+
+.package-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family: "Poppins", sans-serif !important;
+
+  font-size: 10px !important;
+
+  font-weight: 500;
+
+  letter-spacing: 1.8px;
+
+  color: #aaa398 !important;
+}
+
+
+.package-price strong {
+  font-family: "Source Sans 3", sans-serif !important;
+
+  font-size: 27px !important;
+
+  font-weight: 600;
+
+  letter-spacing: 0;
+
+  color: #f4f1ea !important;
+}
+
+
+/* =========================================
+   MAIN TITLE
+========================================= */
+
+.package-main {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-top: 55px;
+}
+
+
+.package-main h3 {
+  margin: 0;
+
+  font-family: "Source Sans 3", sans-serif !important;
+
+  font-size: clamp(55px, 7vw, 100px);
+
+  font-weight: 600;
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+
+  color: #f4f1ea;
+
+  transition:
+    color 0.35s ease;
+}
+
+
+.package-card:hover .package-main h3 {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.package-arrow {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #5a564e;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #f4f1ea;
+
+  font-size: 22px;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+
+.package-card:hover .package-arrow {
+  background: #ffbd00;
+
+  border-color: #ffbd00;
+
+  color: #111111;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.package-hidden {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 70px;
+
+  margin-top: 45px;
+}
+
+
+.package-hidden p {
+  max-width: 540px;
+
+  margin: 0;
+
+  font-family: "Poppins", sans-serif !important;
+
+  font-size: 15px !important;
+
+  font-weight: 400;
+
+  line-height: 1.8 !important;
+
+  color: #c5bfb5 !important;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.package-features {
+  min-width: 270px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+
+.package-features span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-family: "Poppins", sans-serif !important;
+
+  font-size: 12px !important;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  color: #cfc9c0 !important;
+
+  white-space: nowrap;
+}
+
+
+.package-features span b {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #ffbd00;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.packages-note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  max-width: 650px;
+
+  margin-top: 35px;
+}
+
+
+.packages-note > span {
+  font-family: "Source Sans 3", sans-serif;
+
+  font-size: 18px;
+
+  color: #ffbd00;
+}
+
+
+.packages-note p {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+
+  color: #99938a;
+}
+
+
+/* =========================================
+   NIGHT MODE
+========================================= */
+
+.app.night-mode .packages-section {
+  background:
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(77, 91, 210, 0.17),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      #080d20,
+      #0d1430 55%,
+      #11183a
+    ) !important;
+}
+
+
+.app.night-mode .packages-eyebrow {
+  color: #aeb7d5 !important;
+}
+
+
+.app.night-mode .packages-heading h2 {
+  color: #eef1ff;
+}
+
+
+.app.night-mode .packages-heading h2 em {
+  color: #aeb7e8;
+}
+
+
+.app.night-mode .packages-intro {
+  color: #aeb7d5;
+}
+
+
+.app.night-mode .packages-list {
+  border-color: #303958;
+}
+
+
+.app.night-mode .package-card {
+  border-color: #303958;
+}
+
+
+.app.night-mode .package-card:hover {
+  background: rgba(35, 45, 86, 0.65);
+}
+
+
+.app.night-mode .package-number {
+  color: #aeb7d5 !important;
+}
+
+
+.app.night-mode .package-price {
+  color: #9fa9ca !important;
+}
+
+
+.app.night-mode .package-price strong {
+  color: #eef1ff !important;
+}
+
+
+.app.night-mode .package-main h3 {
+  color: #eef1ff;
+}
+
+
+.app.night-mode .package-arrow {
+  border-color: #4a567e;
+
+  color: #eef1ff;
+}
+
+
+.app.night-mode .package-hidden p {
+  color: #b8c2df !important;
+}
+
+
+.app.night-mode .package-features span {
+  color: #c8d0e8 !important;
+}
+
+
+.app.night-mode .packages-note p {
+  color: #8993b6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .packages-section {
+    padding: 120px 0;
+  }
+
+
+  .packages-heading {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding-bottom: 85px;
+  }
+
+
+  .packages-intro {
+    grid-column: auto;
+
+    margin-top: 0;
+
+    max-width: 500px;
+  }
+
+
+  .packages-heading h2 {
+    font-size: 82px;
+
+    letter-spacing: -3px;
+  }
+
+
+  .package-card {
+    min-height: 300px;
+  }
+
+
+  .package-main h3 {
+    font-size: 72px;
+  }
+
+
+  .package-hidden {
+    gap: 40px;
+  }
+
+
+  .package-features {
+    min-width: 230px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .packages-section {
+    padding: 100px 0;
+  }
+
+
+  .packages-container {
+    width: 88%;
+  }
+
+
+  .packages-heading {
+    padding-bottom: 65px;
+
+    gap: 30px;
+  }
+
+
+  .packages-eyebrow {
+    font-size: 9px !important;
+
+    letter-spacing: 2px;
+  }
+
+
+  .packages-heading h2 {
+    font-size: 55px;
+
+    line-height: 0.9;
+
+    letter-spacing: -2px;
+  }
+
+
+  .packages-intro {
+    font-size: 12px;
+
+    line-height: 1.8;
+  }
+
+
+  .package-card {
+    min-height: auto;
+
+    padding: 30px 0 40px;
+  }
+
+
+  .package-card:hover {
+    padding-left: 10px;
+  }
+
+
+  .package-price {
+    gap: 6px;
+
+    font-size: 8px !important;
+  }
+
+
+  .package-price strong {
+    font-size: 20px !important;
+  }
+
+
+  .package-main {
+    margin-top: 45px;
+  }
+
+
+  .package-main h3 {
+    font-size: 52px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .package-arrow {
+    width: 50px;
+    height: 50px;
+
+    font-size: 18px;
+  }
+
+
+  .package-hidden {
+    display: block;
+
+    margin-top: 35px;
+  }
+
+
+  .package-hidden p {
+    font-size: 13px !important;
+
+    line-height: 1.8 !important;
+  }
+
+
+  .package-features {
+    min-width: 0;
+
+    margin-top: 25px;
+
+    gap: 9px;
+  }
+
+
+  .package-features span {
+    font-size: 11px !important;
+
+    white-space: normal;
+  }
+
+
+  .packages-note {
+    margin-top: 30px;
+  }
+
+
+  .packages-note p {
+    font-size: 9px;
+  }
+}

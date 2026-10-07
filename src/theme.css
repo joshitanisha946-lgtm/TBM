@@ -1,0 +1,541 @@
+/* =========================================
+   BATHROOM MASTERS — AFTER DARK THEME
+========================================= */
+
+.app.night-mode {
+  color: #eef1ff;
+}
+
+
+/* =========================================
+   GLOBAL SECTION BACKGROUNDS
+========================================= */
+
+.app.night-mode .hero-section,
+.app.night-mode .problem-section,
+.app.night-mode .packages-section,
+.app.night-mode .process-section,
+.app.night-mode .portfolio-section,
+.app.night-mode .why-section,
+.app.night-mode .why-us-section,
+.app.night-mode .testimonials-section,
+.app.night-mode .maintenance-section,
+.app.night-mode .global-trends-section,
+.app.night-mode .faq-section,
+.app.night-mode .contact-section {
+  background:
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(72, 86, 190, 0.18),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      #0a1025 0%,
+      #0d1430 50%,
+      #11183a 100%
+    ) !important;
+
+  color: #eef1ff !important;
+}
+
+
+/* =========================================
+   SECONDARY COSMIC GLOW
+========================================= */
+
+.app.night-mode main {
+  position: relative;
+}
+
+.app.night-mode main::before {
+  content: "";
+
+  position: fixed;
+
+  width: 500px;
+  height: 500px;
+
+  top: 20%;
+  right: -250px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(89, 100, 230, 0.12),
+      transparent 70%
+    );
+
+  filter: blur(25px);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   GENERAL TEXT
+========================================= */
+
+.app.night-mode h1,
+.app.night-mode h2,
+.app.night-mode h3,
+.app.night-mode h4,
+.app.night-mode h5,
+.app.night-mode p,
+.app.night-mode a {
+  transition:
+    color 0.7s ease;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.app.night-mode h1,
+.app.night-mode h2,
+.app.night-mode h3,
+.app.night-mode h4 {
+  color: #eef1ff;
+}
+
+
+/* =========================================
+   SECONDARY TEXT
+========================================= */
+
+.app.night-mode p {
+  color: #9fa8c9;
+}
+
+
+/* =========================================
+   SMALL LABELS
+========================================= */
+
+.app.night-mode span {
+  color: #8992b7;
+}
+
+
+/* =========================================
+   YELLOW BRAND ACCENT
+========================================= */
+
+.app.night-mode em {
+  color: #ffbd00;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.app.night-mode .hero-section {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 72% 25%,
+      rgba(74, 92, 210, 0.22),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      #090f24,
+      #101735 60%,
+      #141b3e
+    ) !important;
+}
+
+.app.night-mode .hero-eyebrow {
+  color: #7f89b2;
+}
+
+.app.night-mode .hero-content h1 {
+  color: #f3f5ff;
+}
+
+.app.night-mode .hero-content h1 em {
+  color: #aab3e8;
+}
+
+.app.night-mode .hero-description {
+  color: #9ca5c7;
+}
+
+.app.night-mode .hero-line {
+  background: rgba(150, 160, 220, 0.18);
+}
+
+.app.night-mode .hero-guarantee > strong {
+  color: #ffbd00;
+}
+
+.app.night-mode .hero-guarantee span {
+  color: #eef1ff;
+}
+
+.app.night-mode .hero-guarantee p {
+  color: #7f89b2;
+}
+
+
+/* =========================================
+   HERO BUTTON
+========================================= */
+
+.app.night-mode .hero-button {
+  background: #eef1ff;
+
+  border-color: #eef1ff;
+
+  color: #10152d;
+}
+
+.app.night-mode .hero-button strong {
+  background: #10152d;
+
+  color: #ffbd00;
+}
+
+.app.night-mode .hero-button:hover {
+  background: #ffbd00;
+
+  border-color: #ffbd00;
+
+  color: #111111;
+}
+
+.app.night-mode .hero-button:hover strong {
+  background: #111111;
+
+  color: #ffbd00;
+}
+
+
+/* =========================================
+   PROBLEM
+========================================= */
+
+.app.night-mode .problem-section {
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(80, 95, 210, 0.12),
+      transparent 35%
+    ),
+    #0d132d !important;
+}
+
+
+/* =========================================
+   PACKAGES
+========================================= */
+
+.app.night-mode .packages-section {
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(82, 93, 205, 0.14),
+      transparent 35%
+    ),
+    #080d20 !important;
+}
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.app.night-mode .process-section {
+  background:
+    linear-gradient(
+      145deg,
+      #0d132b,
+      #111938
+    ) !important;
+}
+
+
+/* =========================================
+   PORTFOLIO
+========================================= */
+
+.app.night-mode .portfolio-section {
+  background:
+    linear-gradient(
+      135deg,
+      #080d20,
+      #111936
+    ) !important;
+}
+
+.app.night-mode .portfolio-project-info {
+  color: #eef1ff;
+}
+
+.app.night-mode .portfolio-project-meta span {
+  color: #8992b7;
+}
+
+.app.night-mode .portfolio-project-title p {
+  color: #8992b7;
+}
+
+
+/* =========================================
+   WHY US
+========================================= */
+
+.app.night-mode .why-section,
+.app.night-mode .why-us-section {
+  background:
+    radial-gradient(
+      circle at 70% 10%,
+      rgba(72, 85, 195, 0.14),
+      transparent 35%
+    ),
+    #0d132c !important;
+}
+
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.app.night-mode .testimonials-section {
+  background:
+    radial-gradient(
+      circle at 75% 0%,
+      rgba(76, 91, 205, 0.18),
+      transparent 35%
+    ),
+    #0d142e !important;
+}
+
+.app.night-mode .testimonial-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(27, 37, 78, 0.96),
+      rgba(17, 24, 54, 0.98)
+    ) !important;
+
+  border-color: rgba(150, 162, 230, 0.16);
+
+  box-shadow:
+    0 15px 45px rgba(3, 6, 20, 0.3);
+}
+
+.app.night-mode .testimonial-card p {
+  color: #dfe4ff;
+}
+
+.app.night-mode .testimonial-card-bottom {
+  border-color: rgba(150, 162, 230, 0.15);
+}
+
+.app.night-mode .testimonial-person strong {
+  color: #eef1ff;
+}
+
+.app.night-mode .testimonial-person span {
+  color: #8992b7;
+}
+
+
+/* =========================================
+   MAINTENANCE
+========================================= */
+
+.app.night-mode .maintenance-section {
+  background:
+    radial-gradient(
+      circle at 75% 5%,
+      rgba(78, 91, 205, 0.16),
+      transparent 32%
+    ),
+    #080d20 !important;
+}
+
+
+/* =========================================
+   GLOBAL TRENDS
+========================================= */
+
+.app.night-mode .global-trends-section {
+  background:
+    radial-gradient(
+      circle at 75% 0%,
+      rgba(81, 94, 215, 0.17),
+      transparent 35%
+    ),
+    #090e23 !important;
+}
+
+.app.night-mode .global-trend-image {
+  background: #111832;
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.app.night-mode .faq-section {
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(80, 92, 205, 0.12),
+      transparent 35%
+    ),
+    #0d142e !important;
+}
+
+.app.night-mode .faq-list {
+  border-color: #303957;
+}
+
+.app.night-mode .faq-item {
+  border-color: #303957;
+}
+
+.app.night-mode .faq-item.is-open {
+  background:
+    rgba(38, 48, 91, 0.65);
+}
+
+.app.night-mode .faq-question {
+  color: #eef1ff;
+}
+
+.app.night-mode .faq-question-text {
+  color: #eef1ff;
+}
+
+.app.night-mode .faq-answer p {
+  color: #9fa8c9;
+}
+
+.app.night-mode .faq-icon {
+  border-color: #4b567d;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.app.night-mode .contact-section {
+  background:
+    radial-gradient(
+      circle at 75% 0%,
+      rgba(74, 87, 205, 0.17),
+      transparent 35%
+    ),
+    #080d20 !important;
+}
+
+.app.night-mode .contact-heading h2 {
+  color: #eef1ff;
+}
+
+.app.night-mode .contact-detail-block a {
+  color: #eef1ff;
+}
+
+.app.night-mode .contact-detail-block p {
+  color: #9fa8c9;
+}
+
+.app.night-mode .contact-form input,
+.app.night-mode .contact-form select,
+.app.night-mode .contact-form textarea {
+  color: #eef1ff;
+
+  border-color: #3a456c;
+}
+
+.app.night-mode .contact-form input::placeholder,
+.app.night-mode .contact-form textarea::placeholder {
+  color: #687394;
+}
+
+
+/* =========================================
+   CONTACT CTA
+========================================= */
+
+.app.night-mode .contact-submit {
+  background: #ffbd00;
+
+  border-color: #ffbd00;
+
+  color: #111111;
+}
+
+.app.night-mode .contact-submit strong {
+  background: #111111;
+
+  color: #ffbd00;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.app.night-mode .site-footer {
+  color: #eef1ff;
+}
+
+.app.night-mode .footer-brand h3 {
+  color: #eef1ff;
+}
+
+
+.app.night-mode .footer-links a {
+  color: #eef1ff;
+}
+
+.app.night-mode .footer-links span {
+  color: #6f789b;
+}
+
+.app.night-mode .footer-bottom {
+  border-color: #293250;
+}
+
+.app.night-mode .footer-bottom span,
+.app.night-mode .footer-bottom a {
+  color: #687394;
+}
+
+
+/* =========================================
+   COSMIC ATMOSPHERE
+========================================= */
+
+.app.night-mode .cosmic-background {
+  opacity: 1;
+}
+
+
+/* =========================================
+   SMOOTH TRANSITION
+========================================= */
+
+.app.night-mode main,
+.app.night-mode main section,
+.app.night-mode main article,
+.app.night-mode main div {
+  transition:
+    background 0.8s ease,
+    border-color 0.8s ease,
+    color 0.8s ease;
+}
