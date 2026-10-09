@@ -199,19 +199,19 @@ p {
 }
 
 .package-price strong {
-  font-size: 27px !important;
+  font-size: 22px !important;
   color: #f4f1ea !important;
 }
 
 .package-hidden p {
-  font-size: 15px !important;
-  line-height: 1.8 !important;
+  font-size: 13.5px !important;
+  line-height: 1.7 !important;
   color: #c5bfb5 !important;
 }
 
 .package-features span {
-  font-size: 13px !important;
-  line-height: 1.6 !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
   color: #d0cbc2 !important;
 }
 
