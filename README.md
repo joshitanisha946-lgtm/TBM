@@ -10,7 +10,7 @@ A modern, responsive landing page for **The Bathroom Masters**, built with React
 
 - **Architectural Hero Section:** 2-column layout with live handover indicator, 14-day turnaround guarantee, and luxury bathroom visual showcase.
 - **Interactive Before & After Slider:** Touch & mouse draggable slider allowing prospective clients to preview real transformations.
-- **Curated Renovation Packages:** Tiered pricing packages (Essential Refresh, Signature Makeover, Luxury Master Suite).
+- **Curated Renovation Packages:** Tiered pricing packages (Standard, Premium, Luxury).
 - **Featured Portfolio:** Showcase of finished projects across Ahmedabad (Bodakdev, Vastrapur, Sindhu Bhavan, Ambli).
 - **5-Step Process Timeline:** Clear timeline from *Define* to *Delight*.
 - **Client Testimonials:** Dual animated marquee tracks featuring feedback from homeowners.

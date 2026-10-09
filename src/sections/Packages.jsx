@@ -5,7 +5,7 @@ function Packages() {
   const packagesData = [
     {
       number: "01",
-      name: "ESSENTIAL REFRESH",
+      name: "STANDARD",
       startingPrice: "₹1,49,000",
       description:
         "Designed to modernize dated finishes, eliminate persistent leaks, and revitalize compact bathrooms with clean, durable materials.",
@@ -19,7 +19,7 @@ function Packages() {
     },
     {
       number: "02",
-      name: "SIGNATURE MAKEOVER",
+      name: "PREMIUM",
       startingPrice: "₹2,89,000",
       description:
         "Our most popular turnkey package: full spatial redesign with wet and dry separation, ambient lighting, and designer fixtures.",
@@ -34,7 +34,7 @@ function Packages() {
     },
     {
       number: "03",
-      name: "LUXURY MASTER SUITE",
+      name: "LUXURY",
       startingPrice: "₹4,75,000",
       description:
         "Architectural luxury for discerning master suites: bespoke bookmatched stone surfaces, concealed thermostatic controls, and smart mirrors.",
