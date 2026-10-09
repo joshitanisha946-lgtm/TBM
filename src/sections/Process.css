@@ -1,681 +1,382 @@
 /* =========================================
-   PROCESS SECTION
+   PROCESS SECTION (SINGLE-LINE MARQUEE SLIDESHOW)
 ========================================= */
 
 .process-section {
   position: relative;
-
-  padding: 170px 0 150px;
-
-  background: #f4f1ea;
-
+  width: 100%;
+  padding: 140px 0 120px;
+  background: var(--cream, #f4f1ea);
   color: #191816;
-
   overflow: hidden;
 }
 
-
 /* =========================================
-   CONTAINER
+   CONTAINER & HEADER
 ========================================= */
 
 .process-container {
-  width: min(1250px, 88%);
-
+  width: min(1320px, 90%);
   margin: 0 auto;
 }
 
-
-/* =========================================
-   HEADER
-========================================= */
-
 .process-header {
   position: relative;
-
   display: grid;
-
-  grid-template-columns: 1fr 1.7fr;
-
+  grid-template-columns: 1fr 1.6fr;
   column-gap: 80px;
-
-  padding-bottom: 120px;
+  align-items: flex-end;
+  margin-bottom: 30px;
 }
 
 .process-label {
   display: flex;
-
   flex-direction: column;
-
-  justify-content: space-between;
-
-  height: 80px;
-
-  font-size: 9px;
-
-  letter-spacing: 2.5px;
-
-  color: #8d877c;
+  gap: 10px;
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  color: #777168;
 }
 
 .process-label span:last-child {
   color: #191816;
-
-  font-size: 10px;
-
-  letter-spacing: 1.5px;
 }
-
-
-/* =========================================
-   HEADING
-========================================= */
 
 .process-header h2 {
   margin: 0;
-
-  font-family: "Playfair Display", serif;
-
-  font-size: clamp(70px, 9vw, 130px);
-
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(52px, 6.5vw, 88px);
   font-weight: 500;
-
-  line-height: 0.84;
-
-  letter-spacing: -6px;
+  line-height: 0.94;
+  letter-spacing: -3.5px;
+  color: #191816;
 }
 
 .process-header h2 em {
-  color: #ffbd00;
-
+  font-style: italic;
   font-weight: 400;
+  color: #ffbd00;
 }
-
-
-/* =========================================
-   INTRO
-========================================= */
 
 .process-intro {
-  grid-column: 2;
-
-  max-width: 500px;
-
-  margin: 50px 0 0;
-
+  margin: 0;
+  max-width: 480px;
+  font-family: var(--font-body, "Poppins", sans-serif);
   font-size: 14px;
-
   line-height: 1.8;
-
-  color: #777168;
+  color: #5f5a52;
 }
-
 
 /* =========================================
-   TIMELINE
+   CONTINUOUS MARQUEE SLIDESHOW (1 LINE)
 ========================================= */
 
-.process-timeline {
+.process-marquee {
   position: relative;
-
-  padding-left: 100px;
-
-  border-top: 1px solid #d2ccc1;
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0 40px;
+  margin-top: 40px;
 }
 
-
-/* Vertical line */
-
-.process-line {
+/* Gradient fade edges on left and right */
+.process-marquee::before,
+.process-marquee::after {
+  content: "";
   position: absolute;
-
   top: 0;
   bottom: 0;
-
-  left: 32px;
-
-  width: 1px;
-
-  background: #d2ccc1;
+  width: 140px;
+  z-index: 5;
+  pointer-events: none;
 }
 
-.process-line-active {
-  width: 2px;
-
-  background: #ffbd00;
+.process-marquee::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--cream, #f4f1ea),
+    rgba(244, 241, 234, 0)
+  );
 }
 
+.process-marquee::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--cream, #f4f1ea),
+    rgba(244, 241, 234, 0)
+  );
+}
+
+/* Marquee track */
+.process-track {
+  display: flex;
+  width: max-content;
+  gap: 22px;
+  will-change: transform;
+  animation: processScroll 36s linear infinite;
+}
+
+/* Pause when visitor hovers */
+.process-marquee:hover .process-track {
+  animation-play-state: paused;
+}
+
+@keyframes processScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% / 3));
+  }
+}
 
 /* =========================================
-   PROCESS STEP
+   PROCESS STEP CARD
 ========================================= */
 
-.process-step {
-  position: relative;
-
-  min-height: 190px;
-
-  display: grid;
-
-  grid-template-columns: 1fr 100px;
-
-  align-items: center;
-
-  gap: 50px;
-
-  padding: 45px 0;
-
-  border-bottom: 1px solid #d2ccc1;
-
-  transition:
-    background 0.4s ease,
-    padding-left 0.4s ease;
-}
-
-
-/* =========================================
-   NUMBER CIRCLE
-========================================= */
-
-.process-number {
-  position: absolute;
-
-  left: -100px;
-
-  width: 65px;
-  height: 65px;
-
+.process-card {
+  width: 380px;
+  min-height: 260px;
+  padding: 32px 28px;
+  flex-shrink: 0;
   display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid #bdb6aa;
-
-  border-radius: 50%;
-
-  background: #f4f1ea;
-
-  z-index: 2;
-
-  transition:
-    background 0.4s ease,
-    border-color 0.4s ease,
-    transform 0.4s ease;
-}
-
-.process-number span {
-  font-size: 10px;
-
-  letter-spacing: 1.5px;
-
-  color: #777168;
-}
-
-.process-step:hover .process-number {
-  background: #ffbd00;
-
-  border-color: #ffbd00;
-
-  transform: scale(1.1);
-}
-
-.process-step:hover .process-number span {
-  color: #111111;
-}
-
-
-/* =========================================
-   STEP CONTENT
-========================================= */
-
-.process-content {
-  max-width: 760px;
-}
-
-.process-title-row {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  margin-bottom: 18px;
-}
-
-.process-title-row h3 {
-  margin: 0;
-
-  font-size: 22px;
-
-  font-weight: 500;
-
-  letter-spacing: -0.5px;
-}
-
-.process-arrow {
-  width: 42px;
-  height: 42px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid #c6bfb4;
-
-  border-radius: 50%;
-
-  color: #191816;
-
-  font-size: 16px;
-
-  transition:
-    background 0.3s ease,
-    color 0.3s ease,
-    transform 0.3s ease;
-}
-
-.process-step:hover .process-arrow {
-  background: #ffbd00;
-
-  border-color: #ffbd00;
-
-  color: #111111;
-
-  transform: rotate(45deg);
-}
-
-.process-content p {
-  max-width: 700px;
-
-  margin: 0;
-
-  font-size: 14px;
-
-  line-height: 1.8;
-
-  color: #777168;
-}
-
-
-/* =========================================
-   SIDE STEP
-========================================= */
-
-.process-side {
-  display: flex;
-
   flex-direction: column;
-
-  align-items: flex-end;
-
-  gap: 7px;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e2ddd4;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(25, 24, 22, 0.04);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
-.process-side span {
-  font-size: 7px;
-
-  letter-spacing: 2px;
-
-  color: #a19a8e;
+.process-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffbd00;
+  box-shadow: 0 18px 40px rgba(255, 189, 0, 0.15);
 }
 
-.process-side strong {
-  font-family: "Playfair Display", serif;
-
-  font-size: 34px;
-
-  font-weight: 400;
-
-  color: #b0a99e;
-
-  transition: color 0.3s ease;
+/* Card Top */
+.process-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
-.process-step:hover .process-side strong {
+.process-card-number {
+  font-family: var(--font-display, "Source Sans 3", sans-serif);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
   color: #ffbd00;
+  letter-spacing: -1px;
 }
 
-
-/* =========================================
-   BOTTOM STATEMENT
-========================================= */
-
-.process-bottom {
-  display: grid;
-
-  grid-template-columns: 1fr 1.7fr;
-
-  gap: 80px;
-
-  padding-top: 130px;
+.process-card-badge {
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: rgba(25, 24, 22, 0.05);
+  color: #777168;
+  border: 1px solid rgba(25, 24, 22, 0.08);
 }
 
-.process-bottom > span {
-  font-size: 9px;
+/* Card Content */
+.process-card-content h3 {
+  margin: 0 0 10px;
+  font-family: var(--font-display, "Source Sans 3", sans-serif);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #191816;
+}
 
-  letter-spacing: 3px;
+.process-card-content p {
+  margin: 0;
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: 13px;
+  line-height: 1.75;
+  color: #5f5a52;
+}
 
+/* Card Bottom */
+.process-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(25, 24, 22, 0.07);
+}
+
+.process-card-bottom span {
+  font-family: var(--font-body, "Poppins", sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   color: #8d877c;
 }
 
-.process-bottom p {
-  margin: 0;
-
-  font-family: "Playfair Display", serif;
-
-  font-size: clamp(48px, 6vw, 82px);
-
-  line-height: 0.9;
-
-  letter-spacing: -4px;
-}
-
-.process-bottom strong {
-  font-weight: 500;
-}
-
-.process-bottom em {
-  color: #ffbd00;
-
+.process-card-bottom strong {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(25, 24, 22, 0.05);
+  color: #191816;
+  font-size: 14px;
   font-weight: 400;
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease;
 }
 
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-  .process-section {
-    padding: 120px 0;
-  }
-
-  .process-header {
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-
-    padding-bottom: 90px;
-  }
-
-  .process-label {
-    flex-direction: row;
-
-    height: auto;
-  }
-
-  .process-intro {
-    grid-column: auto;
-
-    margin-top: 0;
-  }
-
-  .process-header h2 {
-    font-size: 80px;
-
-    letter-spacing: -4px;
-  }
-
-  .process-bottom {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-  }
+.process-card:hover .process-card-bottom strong {
+  background: #ffbd00;
+  color: #111111;
+  transform: rotate(45deg);
 }
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 650px) {
-
-  .process-section {
-    padding: 100px 0;
-  }
-
-  .process-container {
-    width: 88%;
-  }
-
-  .process-header {
-    padding-bottom: 70px;
-  }
-
-  .process-header h2 {
-    font-size: 58px;
-
-    letter-spacing: -3px;
-  }
-
-  .process-intro {
-    font-size: 13px;
-  }
-
-  .process-timeline {
-    padding-left: 65px;
-  }
-
-  .process-line {
-    left: 20px;
-  }
-
-  .process-step {
-    min-height: auto;
-
-    display: block;
-
-    padding: 45px 0;
-  }
-
-  .process-number {
-    left: -65px;
-
-    width: 42px;
-    height: 42px;
-  }
-
-  .process-number span {
-    font-size: 8px;
-  }
-
-  .process-title-row {
-    margin-bottom: 14px;
-  }
-
-  .process-title-row h3 {
-    font-size: 18px;
-  }
-
-  .process-arrow {
-    width: 34px;
-    height: 34px;
-
-    font-size: 13px;
-  }
-
-  .process-content p {
-    font-size: 12px;
-
-    line-height: 1.7;
-  }
-
-  .process-side {
-    display: none;
-  }
-
-  .process-bottom {
-    display: block;
-
-    padding-top: 80px;
-  }
-
-  .process-bottom p {
-    margin-top: 35px;
-
-    font-size: 48px;
-
-    letter-spacing: -2px;
-  }
-}
-/* =========================================
-   PROCESS — BOTTOM STATEMENT TYPOGRAPHY FIX
-========================================= */
-
-.process-bottom p,
-.process-bottom p strong,
-.process-bottom p em {
-  font-family: "Source Sans 3", sans-serif !important;
-
-  font-style: normal !important;
-
-  font-weight: 600 !important;
-
-  color: #191816 !important;
-}
-
-
-/* Main statement */
-
-.process-bottom p {
-  font-size: clamp(55px, 7vw, 105px) !important;
-
-  line-height: 0.86 !important;
-
-  letter-spacing: -3px !important;
-}
-
-
-/* ONE TEAM / ONE PLAN / ONE FINISHED */
-
-.process-bottom p strong {
-  font-family: "Source Sans 3", sans-serif !important;
-
-  font-style: normal !important;
-
-  font-weight: 600 !important;
-}
-
-
-/* BATHROOM */
-
-.process-bottom p em {
-  font-family: "Source Sans 3", sans-serif !important;
-
-  font-style: normal !important;
-
-  font-weight: 500 !important;
-
-  color: #ffbd00 !important;
-}
-
-
-/* Small label above */
-
-.process-bottom > span {
-  font-family: "Poppins", sans-serif !important;
-
-  font-size: 10px !important;
-
-  font-weight: 500 !important;
-
-  letter-spacing: 2px !important;
-
-  color: #777168 !important;
-}
-
 
 /* =========================================
    NIGHT MODE
 ========================================= */
 
-.app.night-mode .process-bottom p,
-.app.night-mode .process-bottom p strong {
-  color: #eef1ff !important;
+.app.night-mode .process-section {
+  background: radial-gradient(circle at 80% 20%, rgba(74, 92, 210, 0.16), transparent 45%),
+              linear-gradient(145deg, #090f24, #101735 60%, #141b3e) !important;
+  color: #eef1ff;
 }
 
-.app.night-mode .process-bottom p em {
-  color: #ffbd00 !important;
+.app.night-mode .process-label {
+  color: #929ebd;
 }
 
-.app.night-mode .process-bottom > span {
-  color: #8993b7 !important;
+.app.night-mode .process-label span:last-child {
+  color: #eef1ff;
 }
 
+.app.night-mode .process-header h2 {
+  color: #f3f5ff;
+}
+
+.app.night-mode .process-intro {
+  color: #a4adcc;
+}
+
+.app.night-mode .process-marquee::before {
+  background: linear-gradient(
+    to right,
+    #0d132b,
+    rgba(13, 19, 43, 0)
+  );
+}
+
+.app.night-mode .process-marquee::after {
+  background: linear-gradient(
+    to left,
+    #0d132b,
+    rgba(13, 19, 43, 0)
+  );
+}
+
+.app.night-mode .process-card {
+  background: linear-gradient(145deg, rgba(27, 37, 78, 0.95), rgba(17, 24, 54, 0.98));
+  border-color: rgba(150, 162, 230, 0.16);
+  box-shadow: 0 15px 40px rgba(3, 6, 20, 0.3);
+}
+
+.app.night-mode .process-card:hover {
+  border-color: #ffbd00;
+  box-shadow: 0 18px 45px rgba(255, 189, 0, 0.2);
+}
+
+.app.night-mode .process-card-badge {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #aeb7d5;
+}
+
+.app.night-mode .process-card-content h3 {
+  color: #eef1ff;
+}
+
+.app.night-mode .process-card-content p {
+  color: #cbd3f0;
+}
+
+.app.night-mode .process-card-bottom {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.app.night-mode .process-card-bottom span {
+  color: #8993b7;
+}
+
+.app.night-mode .process-card-bottom strong {
+  background: rgba(255, 255, 255, 0.08);
+  color: #eef1ff;
+}
 
 /* =========================================
-   MOBILE
+   RESPONSIVE DESIGN
 ========================================= */
 
-@media (max-width: 650px) {
-
-  .process-bottom p {
-    font-size: 52px !important;
-
-    line-height: 0.9 !important;
-
-    letter-spacing: -2px !important;
+@media (max-width: 900px) {
+  .process-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .process-bottom > span {
-    font-size: 9px !important;
+  .process-intro {
+    max-width: 100%;
+  }
+
+  .process-card {
+    width: 320px;
+    min-height: 240px;
+    padding: 26px 22px;
+  }
+
+  .process-card-content h3 {
+    font-size: 22px;
+  }
+
+  .process-card-content p {
+    font-size: 12px;
   }
 }
-/* =========================================
-   PROCESS — REMOVE EMPTY SPACE
-========================================= */
-
-.process-section {
-  min-height: 0 !important;
-  height: auto !important;
-
-  padding-top: 140px !important;
-  padding-bottom: 90px !important;
-
-  overflow: hidden;
-}
-
-
-.process-container {
-  height: auto !important;
-  min-height: 0 !important;
-}
-
-
-/* Keep the bottom statement close to the timeline */
-
-.process-bottom {
-  margin-top: 80px !important;
-  margin-bottom: 0 !important;
-
-  padding-top: 35px !important;
-  padding-bottom: 0 !important;
-}
-
-
-/* Prevent any hidden element from creating height */
-
-.process-bottom p {
-  margin-bottom: 0 !important;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 650px) {
-
   .process-section {
-    padding-top: 90px !important;
-    padding-bottom: 70px !important;
+    padding: 100px 0 80px;
   }
 
-  .process-bottom {
-    margin-top: 60px !important;
-    padding-top: 25px !important;
+  .process-header h2 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .process-card {
+    width: 290px;
+    min-height: 230px;
+    padding: 22px 18px;
+  }
+
+  .process-marquee::before,
+  .process-marquee::after {
+    width: 50px;
   }
 }
