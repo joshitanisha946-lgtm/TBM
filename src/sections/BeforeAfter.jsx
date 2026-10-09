@@ -1,4 +1,6 @@
 import { useState, useCallback } from "react";
+import beforeImage from "../assets/before-bathroom.jpg";
+import afterImage from "../assets/after-bathroom.jpg";
 import "./BeforeAfter.css";
 
 function BeforeAfter() {
@@ -47,7 +49,7 @@ function BeforeAfter() {
         {/* AFTER IMAGE (Background) */}
         <div className="after-image">
           <img
-            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=90"
+            src={afterImage}
             alt="Renovated luxury bathroom after transformation"
           />
           <div className="image-label after-label">AFTER · 14 DAYS</div>
@@ -61,7 +63,7 @@ function BeforeAfter() {
           }}
         >
           <img
-            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1800&q=90"
+            src={beforeImage}
             alt="Bathroom before renovation"
           />
           <div className="image-label before-label">BEFORE RENOVATION</div>
