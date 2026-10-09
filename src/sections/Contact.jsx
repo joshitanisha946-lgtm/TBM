@@ -28,11 +28,9 @@ function Contact() {
             transition={{ duration: 0.9 }}
           >
             <h2>
-              LET'S BUILD
+              CONTACT
               <br />
-              YOUR
-              <br />
-              <em>BATHROOM.</em>
+              <em>US.</em>
             </h2>
 
             <p>
