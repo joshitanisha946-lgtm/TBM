@@ -5,7 +5,7 @@
 .portfolio-section {
   width: 100%;
 
-  padding: 150px 0 100px;
+  padding: 70px 0 55px;
 
   background: #f4f1ea;
 
@@ -35,7 +35,7 @@
 
   gap: 80px;
 
-  margin-bottom: 80px;
+  margin-bottom: 35px;
 }
 
 
@@ -369,7 +369,7 @@
 
   gap: 40px;
 
-  margin-top: 70px;
+  margin-top: 35px;
 
   padding-top: 30px;
 
@@ -499,7 +499,7 @@
 
     gap: 40px;
 
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .portfolio-label {
@@ -525,7 +525,7 @@
 @media (max-width: 650px) {
 
   .portfolio-section {
-    padding: 100px 0 70px;
+    padding: 50px 0 40px;
   }
 
   .portfolio-container {
@@ -586,7 +586,7 @@
   .portfolio-bottom {
     display: block;
 
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   .portfolio-bottom a {

@@ -5,13 +5,13 @@
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   background: var(--cream, #f4f1ea);
   color: #191816;
   overflow: hidden;
-  padding: 120px 0 80px;
+  padding: 105px 0 35px;
 }
 
 /* Subtle ambient background glow */
@@ -529,7 +529,7 @@
 
 @media (max-width: 650px) {
   .hero-section {
-    padding: 100px 0 60px;
+    padding: 85px 0 30px;
     min-height: auto;
   }
 

@@ -5,7 +5,7 @@
 .packages-section {
   position: relative;
 
-  padding: 110px 0 95px;
+  padding: 70px 0 60px;
 
   background: #1c1b19;
 
@@ -37,7 +37,7 @@
 
   column-gap: 80px;
 
-  padding-bottom: 55px;
+  padding-bottom: 30px;
 }
 
 
@@ -510,7 +510,7 @@
 @media (max-width: 900px) {
 
   .packages-section {
-    padding: 90px 0;
+    padding: 55px 0;
   }
 
 
@@ -519,7 +519,7 @@
 
     gap: 35px;
 
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 
 
@@ -567,7 +567,7 @@
 @media (max-width: 650px) {
 
   .packages-section {
-    padding: 75px 0;
+    padding: 45px 0;
   }
 
 
@@ -577,7 +577,7 @@
 
 
   .packages-heading {
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 
     gap: 25px;
   }

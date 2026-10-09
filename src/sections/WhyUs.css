@@ -5,7 +5,7 @@
 .why-us-section {
   position: relative;
   width: 100%;
-  padding: 140px 0 120px;
+  padding: 70px 0 55px;
   background: var(--cream, #f4f1ea);
   color: #191816;
   overflow: hidden;
@@ -26,7 +26,7 @@
   grid-template-columns: 0.75fr 1.25fr;
   gap: 80px;
   align-items: flex-end;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .why-us-label {
@@ -387,7 +387,7 @@
 
 @media (max-width: 650px) {
   .why-us-section {
-    padding: 100px 0 80px;
+    padding: 50px 0 40px;
   }
 
   .why-us-heading h2 {

@@ -5,7 +5,7 @@
 .faq-section {
   position: relative;
 
-  padding: 130px 0 120px;
+  padding: 70px 0 55px;
 
   background: #f4f1ea;
 
@@ -37,7 +37,7 @@
 
   gap: 80px;
 
-  padding-bottom: 65px;
+  padding-bottom: 30px;
 }
 
 .faq-label {
@@ -283,7 +283,7 @@
 
   gap: 50px;
 
-  margin-top: 110px;
+  margin-top: 40px;
 
   padding-top: 35px;
 
@@ -445,7 +445,7 @@
 @media (max-width: 650px) {
 
   .faq-section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 
   .faq-container {
@@ -453,7 +453,7 @@
   }
 
   .faq-header {
-    padding-bottom: 65px;
+    padding-bottom: 25px;
   }
 
   .faq-heading {
@@ -512,7 +512,7 @@
   .faq-bottom {
     display: block;
 
-    margin-top: 80px;
+    margin-top: 35px;
   }
 
   .faq-bottom p {

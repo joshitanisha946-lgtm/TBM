@@ -1,7 +1,7 @@
 .before-after-section {
   position: relative;
   width: 100%;
-  padding: 160px 5vw;
+  padding: 70px 5vw 60px;
   background: #f5f2ec;
   overflow: hidden;
   box-sizing: border-box;
@@ -13,7 +13,7 @@
 
 .before-after-heading {
   width: min(750px, 100%);
-  margin: 0 auto 70px;
+  margin: 0 auto 35px;
   text-align: center;
 }
 
@@ -238,11 +238,11 @@
 
 @media (max-width: 768px) {
   .before-after-section {
-    padding: 100px 6vw;
+    padding: 50px 5vw 40px;
   }
 
   .before-after-heading {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 
   .before-after-heading h2 {
