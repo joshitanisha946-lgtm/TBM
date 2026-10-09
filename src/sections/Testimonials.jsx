@@ -29,16 +29,7 @@ function Testimonials() {
     },
   ];
 
-  const topRow = [...testimonials, ...testimonials];
-
-  const bottomRow = [
-    testimonials[2],
-    testimonials[3],
-    testimonials[0],
-    testimonials[1],
-    testimonials[2],
-    testimonials[3],
-  ];
+  const displayReviews = [...testimonials, ...testimonials, ...testimonials];
 
   return (
     <section className="testimonials-section" id="testimonials">
@@ -83,58 +74,16 @@ function Testimonials() {
         </div>
 
 
-        {/* SCROLLING TESTIMONIALS */}
+        {/* SCROLLING TESTIMONIALS (SINGLE LINE) */}
 
         <div className="testimonials-marquee">
 
-          {/* TOP ROW */}
-
           <div className="testimonial-track testimonial-track-left">
 
-            {topRow.map((testimonial, index) => (
+            {displayReviews.map((testimonial, index) => (
               <article
                 className="testimonial-card"
-                key={`top-${index}`}
-              >
-                <div className="testimonial-stars">
-                  ★★★★★
-                </div>
-
-                <p>
-                  "{testimonial.quote}"
-                </p>
-
-                <div className="testimonial-card-bottom">
-
-                  <div className="testimonial-avatar">
-                    {testimonial.name.charAt(0)}
-                  </div>
-
-                  <div className="testimonial-person">
-                    <strong>
-                      {testimonial.name}
-                    </strong>
-
-                    <span>
-                      {testimonial.role}
-                    </span>
-                  </div>
-
-                </div>
-              </article>
-            ))}
-
-          </div>
-
-
-          {/* BOTTOM ROW */}
-
-          <div className="testimonial-track testimonial-track-right">
-
-            {bottomRow.map((testimonial, index) => (
-              <article
-                className="testimonial-card"
-                key={`bottom-${index}`}
+                key={`review-${index}`}
               >
                 <div className="testimonial-stars">
                   ★★★★★
