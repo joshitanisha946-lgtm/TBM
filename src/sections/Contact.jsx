@@ -209,28 +209,6 @@ function Contact() {
         </div>
 
 
-        {/* BOTTOM CTA */}
-
-        <motion.div
-          className="contact-banner"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-
-          <span>
-            READY WHEN YOU ARE.
-          </span>
-
-          <strong>
-            ON TIME.
-            <br />
-            <em>ON BUDGET.</em>
-          </strong>
-
-        </motion.div>
-
-
         {/* FOOTER */}
 
         <footer className="site-footer">
