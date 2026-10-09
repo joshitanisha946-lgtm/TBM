@@ -116,34 +116,6 @@ function WhyUs() {
           ))}
         </div>
       </div>
-
-      <div className="why-us-container">
-        {/* BOTTOM STATEMENT */}
-        <motion.div
-          className="why-us-bottom"
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-        >
-          <span>THE BATHROOM MASTERS APPROACH</span>
-
-          <strong>
-            NO DELAYS.
-            <br />
-            NO DRAMA.
-            <br />
-            JUST <em>DONE.</em>
-          </strong>
-        </motion.div>
-      </div>
     </section>
   );
 }
