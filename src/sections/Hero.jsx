@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, ShieldCheck, Sparkles, Clock, ArrowDown } from "lucide-react";
+import heroImage from "../assets/hero-bathroom.jpg";
 import "./Hero.css";
 
 function Hero() {
@@ -121,7 +122,7 @@ function Hero() {
         >
           <div className="hero-visual-card">
             <img
-              src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=85"
+              src={heroImage}
               alt="Luxury modern renovated bathroom showcase"
               className="hero-card-img"
             />
