@@ -144,27 +144,6 @@ function Process() {
 
         </div>
 
-
-        {/* BOTTOM STATEMENT */}
-        <motion.div
-          className="process-bottom"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <span>OUR APPROACH</span>
-
-          <p>
-            <strong>ONE TEAM.</strong>
-            <br />
-            ONE PLAN.
-            <br />
-            ONE FINISHED
-            <br />
-            <em>BATHROOM.</em>
-          </p>
-        </motion.div>
-
       </div>
     </section>
   );
