@@ -1,8 +1,7 @@
 import "./Navbar.css";
 import logo from "../assets/logo.png";
-import ThemeToggle from "./ThemeToggle";
 
-function Navbar({ isNight, onToggleTheme }) {
+function Navbar() {
   return (
     <nav className="navbar">
       <a href="#top" className="navbar-logo">
@@ -21,11 +20,6 @@ function Navbar({ isNight, onToggleTheme }) {
       </div>
 
       <div className="navbar-actions">
-        <ThemeToggle
-          isNight={isNight}
-          onToggle={onToggleTheme}
-        />
-
         <a
           href="#contact"
           className="navbar-button"

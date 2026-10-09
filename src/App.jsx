@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
@@ -12,18 +11,9 @@ import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
 
 function App() {
-  const [isNight, setIsNight] = useState(false);
-
-  const handleToggleTheme = () => {
-    setIsNight((current) => !current);
-  };
-
   return (
-    <div className={`app ${isNight ? "night-mode" : ""}`}>
-      <Navbar
-        isNight={isNight}
-        onToggleTheme={handleToggleTheme}
-      />
+    <div className="app">
+      <Navbar />
 
       <main>
         <Hero />

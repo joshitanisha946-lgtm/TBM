@@ -16,7 +16,6 @@ A modern, responsive landing page for **The Bathroom Masters**, built with React
 - **Client Testimonials:** Dual animated marquee tracks featuring feedback from homeowners.
 - **FAQ Section:** Accordion addressing timeline, materials, and live-in renovation questions.
 - **Comprehensive Contact & Quote Form:** Project size selector, inquiries, direct phone, email, and location details.
-- **Day / Night Mode:** Seamless theme toggle with dark cosmic styling.
 
 ---
 

@@ -265,28 +265,6 @@
 }
 
 
-/* =========================================
-   NIGHT NAVBAR
-========================================= */
-
-.night-mode .navbar {
-  background:
-    linear-gradient(
-      120deg,
-      rgba(16, 23, 51, 0.96),
-      rgba(25, 28, 66, 0.94)
-    );
-
-  border-color: rgba(170, 180, 255, 0.16);
-
-  box-shadow:
-    0 15px 40px rgba(4, 7, 24, 0.3),
-    inset 0 0 20px rgba(92, 104, 220, 0.05);
-}
-
-.night-mode .navbar-links a {
-  color: #eef1ff;
-}
 
 
 /* =========================================
